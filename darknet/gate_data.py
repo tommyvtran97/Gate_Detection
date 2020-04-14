@@ -15,7 +15,7 @@ g = open("corners.csv", "r")
 corners = g.readlines()
 lines = f.readlines()[:-1]
 
-path_image = "data/test_image/"
+path_image = "data/test_images/"
 
 def CNN_CSV_File():
     """ This function manipulates the txt-file that is obtained from the Convulational Neural Network (CNN)
