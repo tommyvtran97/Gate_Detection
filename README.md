@@ -5,14 +5,14 @@
 
 #### #1 Creating the required files for setup
 
-To train the YOLOv3 Tiny model first download the files in {insert link}. It contains the following folders and files.
-* Folder YOLOv3
-* Folder_txt 
-* Images_Test
-* Images_Train 
-* Images_Validation 
-* corners.csv
-* create_txt.py
+To train the YOLOv3 Tiny model first download the files in https://drive.google.com/open?id=1tAU94nxl_t4HMqPXizXm84QtYIwCEoYz. It contains the following folders and files.
+* `Folder YOLOv3`
+* `Folder_txt` 
+* `Images_Test`
+* `Images_Train` 
+* `Images_Validation` 
+* `corners.csv`
+* `create_txt.py`
 
 Step 1) Navigate in the terminal to the directory that contains the following items as listed above. 
 
