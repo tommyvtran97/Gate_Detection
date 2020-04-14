@@ -1,0 +1,197 @@
+ CUDNN_HALF=1 
+net.optimized_memory = 0 
+mini_batch = 1, batch = 16, time_steps = 1, train = 0 
+
+ seen 64, trained: 128 K-images (2 Kilo-batches_64) 
+Enter Image Path: data/test_image/img_006.png: Predicted in 32.694000 milli-seconds.
+Gate: 100%	(left_x:   37   top_y:   88   width:   84   height:   71)
+Enter Image Path: data/test_image/img_012.png: Predicted in 32.424000 milli-seconds.
+Gate: 100%	(left_x:   19   top_y:  215   width:   41   height:   39)
+Gate: 100%	(left_x:   89   top_y:  200   width:   83   height:   69)
+Enter Image Path: data/test_image/img_014.png: Predicted in 34.406000 milli-seconds.
+Gate: 100%	(left_x:    5   top_y:  206   width:   26   height:   23)
+Gate: 100%	(left_x:   52   top_y:  202   width:   42   height:   37)
+Gate: 100%	(left_x:  123   top_y:  184   width:   77   height:   79)
+Enter Image Path: data/test_image/img_020.png: Predicted in 31.122000 milli-seconds.
+Gate: 100%	(left_x:    7   top_y:  257   width:   54   height:   44)
+Gate: 100%	(left_x:   79   top_y:  238   width:   97   height:   87)
+Enter Image Path: data/test_image/img_022.png: Predicted in 31.043000 milli-seconds.
+Gate: 100%	(left_x:   10   top_y:  238   width:   55   height:   42)
+Gate: 100%	(left_x:   83   top_y:  217   width:   94   height:   87)
+Enter Image Path: data/test_image/img_027.png: Predicted in 30.866000 milli-seconds.
+Gate: 100%	(left_x:   10   top_y:  211   width:   53   height:   39)
+Gate: 100%	(left_x:   68   top_y:  188   width:  104   height:   92)
+Enter Image Path: data/test_image/img_028.png: Predicted in 29.458000 milli-seconds.
+Gate: 100%	(left_x:    8   top_y:  212   width:   51   height:   44)
+Gate: 100%	(left_x:   62   top_y:  192   width:  109   height:   91)
+Enter Image Path: data/test_image/img_035.png: Predicted in 29.375000 milli-seconds.
+Gate: 98%	(left_x:   10   top_y:  217   width:   27   height:   20)
+Gate: 100%	(left_x:   33   top_y:  207   width:   52   height:   40)
+Gate: 100%	(left_x:   79   top_y:  178   width:  102   height:   95)
+Enter Image Path: data/test_image/img_046.png: Predicted in 29.313000 milli-seconds.
+Gate: 100%	(left_x:   14   top_y:  217   width:   26   height:   20)
+Gate: 96%	(left_x:   37   top_y:  204   width:   48   height:   36)
+Gate: 100%	(left_x:   56   top_y:  163   width:  126   height:  104)
+Enter Image Path: data/test_image/img_051.png: Predicted in 29.202000 milli-seconds.
+Gate: 84%	(left_x:   15   top_y:  219   width:   24   height:   22)
+Gate: 99%	(left_x:   43   top_y:  204   width:   40   height:   43)
+Gate: 100%	(left_x:   43   top_y:  163   width:  142   height:  109)
+Enter Image Path: data/test_image/img_057.png: Predicted in 29.220000 milli-seconds.
+Gate: 99%	(left_x:    5   top_y:  212   width:   41   height:   27)
+Gate: 100%	(left_x:   78   top_y:  153   width:  153   height:  126)
+Gate: 100%	(left_x:   83   top_y:  202   width:   50   height:   44)
+Enter Image Path: data/test_image/img_065.png: Predicted in 28.712000 milli-seconds.
+Gate: 96%	(left_x:   17   top_y:  212   width:   33   height:   27)
+Gate: 100%	(left_x:   66   top_y:  136   width:  173   height:  159)
+Gate: 99%	(left_x:   83   top_y:  202   width:   58   height:   46)
+Gate: 99%	(left_x:   85   top_y:  217   width:   21   height:   21)
+Enter Image Path: data/test_image/img_068.png: Predicted in 28.882000 milli-seconds.
+Gate: 95%	(left_x:   22   top_y:  212   width:   32   height:   24)
+Gate: 100%	(left_x:   62   top_y:  131   width:  183   height:  163)
+Gate: 97%	(left_x:   91   top_y:  214   width:   23   height:   18)
+Gate: 100%	(left_x:   91   top_y:  196   width:   55   height:   47)
+Enter Image Path: data/test_image/img_073.png: Predicted in 28.790000 milli-seconds.
+Gate: 100%	(left_x:   49   top_y:  126   width:  206   height:  186)
+Gate: 96%	(left_x:   97   top_y:  219   width:   25   height:   18)
+Gate: 100%	(left_x:   99   top_y:  203   width:   54   height:   44)
+Enter Image Path: data/test_image/img_111.png: Predicted in 28.855000 milli-seconds.
+Gate: 99%	(left_x:  102   top_y:  147   width:   35   height:   30)
+Gate: 99%	(left_x:  149   top_y:  132   width:   58   height:   63)
+Gate: 99%	(left_x:  167   top_y:  156   width:   20   height:   21)
+Enter Image Path: data/test_image/img_115.png: Predicted in 28.743000 milli-seconds.
+Gate: 88%	(left_x:   94   top_y:  171   width:   28   height:   29)
+Gate: 99%	(left_x:  133   top_y:  155   width:   76   height:   63)
+Gate: 100%	(left_x:  161   top_y:  177   width:   20   height:   22)
+Enter Image Path: data/test_image/img_126.png: Predicted in 28.872000 milli-seconds.
+Gate: 100%	(left_x:   79   top_y:  283   width:   43   height:   40)
+Gate: 100%	(left_x:  120   top_y:  258   width:   90   height:   86)
+Gate: 99%	(left_x:  161   top_y:  281   width:   24   height:   27)
+Enter Image Path: data/test_image/img_132.png: Predicted in 28.659000 milli-seconds.
+Gate: 99%	(left_x:   94   top_y:  180   width:   36   height:   31)
+Gate: 100%	(left_x:  126   top_y:  143   width:   83   height:   97)
+Gate: 99%	(left_x:  165   top_y:  187   width:   29   height:   23)
+Enter Image Path: data/test_image/img_138.png: Predicted in 28.888000 milli-seconds.
+Gate: 100%	(left_x:   97   top_y:  215   width:   37   height:   35)
+Gate: 100%	(left_x:  120   top_y:  183   width:   99   height:   84)
+Gate: 98%	(left_x:  176   top_y:  219   width:   23   height:   25)
+Enter Image Path: data/test_image/img_156.png: Predicted in 29.101000 milli-seconds.
+Gate: 98%	(left_x:   86   top_y:  167   width:  130   height:  112)
+Gate: 100%	(left_x:  103   top_y:  210   width:   38   height:   38)
+Gate: 100%	(left_x:  186   top_y:  219   width:   25   height:   25)
+Enter Image Path: data/test_image/img_159.png: Predicted in 28.992000 milli-seconds.
+Gate: 100%	(left_x:   96   top_y:  162   width:  122   height:  111)
+Gate: 100%	(left_x:  111   top_y:  208   width:   37   height:   36)
+Gate: 99%	(left_x:  192   top_y:  217   width:   29   height:   25)
+Enter Image Path: data/test_image/img_164.png: Predicted in 28.783000 milli-seconds.
+Gate: 100%	(left_x:   94   top_y:  150   width:  141   height:  123)
+Gate: 100%	(left_x:  119   top_y:  201   width:   42   height:   39)
+Gate: 99%	(left_x:  207   top_y:  212   width:   21   height:   23)
+Enter Image Path: data/test_image/img_169.png: Predicted in 28.720000 milli-seconds.
+Gate: 100%	(left_x:   85   top_y:  152   width:  152   height:  121)
+Gate: 100%	(left_x:  121   top_y:  201   width:   38   height:   38)
+Gate: 96%	(left_x:  208   top_y:  211   width:   25   height:   24)
+Enter Image Path: data/test_image/img_182.png: Predicted in 28.776000 milli-seconds.
+Gate: 100%	(left_x:   70   top_y:  142   width:  176   height:  162)
+Gate: 100%	(left_x:  127   top_y:  207   width:   39   height:   42)
+Gate: 98%	(left_x:  215   top_y:  216   width:   29   height:   28)
+Enter Image Path: data/test_image/img_184.png: Predicted in 28.918000 milli-seconds.
+Gate: 100%	(left_x:   65   top_y:  139   width:  185   height:  157)
+Gate: 100%	(left_x:  125   top_y:  202   width:   44   height:   40)
+Gate: 100%	(left_x:  216   top_y:  210   width:   28   height:   29)
+Enter Image Path: data/test_image/img_187.png: Predicted in 28.783000 milli-seconds.
+Gate: 100%	(left_x:   61   top_y:  132   width:  189   height:  171)
+Gate: 100%	(left_x:  124   top_y:  201   width:   47   height:   42)
+Gate: 100%	(left_x:  219   top_y:  209   width:   26   height:   31)
+Enter Image Path: data/test_image/img_189.png: Predicted in 28.993000 milli-seconds.
+Gate: 100%	(left_x:   56   top_y:  127   width:  192   height:  183)
+Gate: 100%	(left_x:  125   top_y:  202   width:   45   height:   41)
+Gate: 100%	(left_x:  220   top_y:  211   width:   23   height:   29)
+Enter Image Path: data/test_image/img_192.png: Predicted in 28.924000 milli-seconds.
+Gate: 100%	(left_x:   45   top_y:  127   width:  205   height:  187)
+Gate: 100%	(left_x:  129   top_y:  204   width:   41   height:   43)
+Gate: 100%	(left_x:  222   top_y:  214   width:   24   height:   26)
+Enter Image Path: data/test_image/img_198.png: Predicted in 28.827000 milli-seconds.
+Gate: 99%	(left_x:   36   top_y:  104   width:  225   height:  241)
+Gate: 100%	(left_x:  133   top_y:  205   width:   42   height:   43)
+Gate: 100%	(left_x:  229   top_y:  214   width:   23   height:   27)
+Enter Image Path: data/test_image/img_249.png: Predicted in 28.905000 milli-seconds.
+Gate: 100%	(left_x:  118   top_y:  220   width:   69   height:   74)
+Gate: 99%	(left_x:  251   top_y:  242   width:   33   height:   40)
+Enter Image Path: data/test_image/img_254.png: Predicted in 28.951000 milli-seconds.
+Gate: 100%	(left_x:  124   top_y:  243   width:   88   height:   81)
+Gate: 100%	(left_x:  268   top_y:  269   width:   37   height:   42)
+Enter Image Path: data/test_image/img_263.png: Predicted in 28.822000 milli-seconds.
+Gate: 96%	(left_x:  152   top_y:  208   width:   81   height:   84)
+Gate: 99%	(left_x:  283   top_y:  229   width:   38   height:   39)
+Enter Image Path: data/test_image/img_267.png: Predicted in 28.999000 milli-seconds.
+Gate: 100%	(left_x:  161   top_y:  190   width:   76   height:   77)
+Gate: 100%	(left_x:  285   top_y:  210   width:   34   height:   37)
+Enter Image Path: data/test_image/img_269.png: Predicted in 28.932000 milli-seconds.
+Gate: 100%	(left_x:  164   top_y:  179   width:   72   height:   79)
+Gate: 100%	(left_x:  283   top_y:  198   width:   32   height:   39)
+Enter Image Path: data/test_image/img_274.png: Predicted in 28.774000 milli-seconds.
+Gate: 100%	(left_x:  159   top_y:  164   width:   78   height:   79)
+Gate: 100%	(left_x:  276   top_y:  186   width:   36   height:   40)
+Enter Image Path: data/test_image/img_284.png: Predicted in 28.803000 milli-seconds.
+Gate: 100%	(left_x:  143   top_y:  170   width:   81   height:   87)
+Gate: 100%	(left_x:  263   top_y:  199   width:   33   height:   38)
+Enter Image Path: data/test_image/img_287.png: Predicted in 28.758000 milli-seconds.
+Gate: 100%	(left_x:  142   top_y:  166   width:   81   height:   88)
+Gate: 100%	(left_x:  262   top_y:  196   width:   35   height:   39)
+Enter Image Path: data/test_image/img_290.png: Predicted in 28.835000 milli-seconds.
+Gate: 100%	(left_x:  140   top_y:  169   width:   85   height:   89)
+Gate: 100%	(left_x:  262   top_y:  200   width:   35   height:   39)
+Enter Image Path: data/test_image/img_295.png: Predicted in 28.812000 milli-seconds.
+Gate: 100%	(left_x:  131   top_y:  169   width:  103   height:  106)
+Gate: 100%	(left_x:  262   top_y:  205   width:   35   height:   41)
+Enter Image Path: data/test_image/img_303.png: Predicted in 28.826000 milli-seconds.
+Gate: 100%	(left_x:  126   top_y:  167   width:  115   height:  125)
+Gate: 100%	(left_x:  261   top_y:  207   width:   36   height:   46)
+Enter Image Path: data/test_image/img_304.png: Predicted in 28.655000 milli-seconds.
+Gate: 100%	(left_x:  124   top_y:  171   width:  118   height:  120)
+Gate: 100%	(left_x:  261   top_y:  208   width:   36   height:   44)
+Enter Image Path: data/test_image/img_310.png: Predicted in 28.740000 milli-seconds.
+Gate: 100%	(left_x:  114   top_y:  159   width:  131   height:  132)
+Gate: 99%	(left_x:  263   top_y:  204   width:   31   height:   47)
+Enter Image Path: data/test_image/img_316.png: Predicted in 28.687000 milli-seconds.
+Gate: 100%	(left_x:  114   top_y:  149   width:  141   height:  132)
+Gate: 100%	(left_x:  264   top_y:  197   width:   38   height:   45)
+Enter Image Path: data/test_image/img_318.png: Predicted in 28.724000 milli-seconds.
+Gate: 100%	(left_x:  116   top_y:  140   width:  140   height:  147)
+Gate: 100%	(left_x:  260   top_y:  193   width:   40   height:   45)
+Enter Image Path: data/test_image/img_322.png: Predicted in 28.796000 milli-seconds.
+Gate: 100%	(left_x:  118   top_y:  139   width:  142   height:  150)
+Gate: 100%	(left_x:  263   top_y:  192   width:   41   height:   47)
+Enter Image Path: data/test_image/img_327.png: Predicted in 28.867000 milli-seconds.
+Gate: 100%	(left_x:  114   top_y:  141   width:  147   height:  153)
+Gate: 100%	(left_x:  260   top_y:  196   width:   45   height:   48)
+Enter Image Path: data/test_image/img_330.png: Predicted in 28.698000 milli-seconds.
+Gate: 100%	(left_x:  108   top_y:  127   width:  156   height:  170)
+Gate: 100%	(left_x:  258   top_y:  188   width:   45   height:   50)
+Enter Image Path: data/test_image/img_370.png: Predicted in 28.889000 milli-seconds.
+Gate: 98%	(left_x:  282   top_y:  133   width:   69   height:   72)
+Enter Image Path: data/test_image/img_374.png: Predicted in 29.045000 milli-seconds.
+Gate: 99%	(left_x:  285   top_y:  150   width:   77   height:   74)
+Enter Image Path: data/test_image/img_382.png: Predicted in 28.952000 milli-seconds.
+Gate: 93%	(left_x:  267   top_y:  234   width:   80   height:   92)
+Enter Image Path: data/test_image/img_385.png: Predicted in 28.893000 milli-seconds.
+Gate: 100%	(left_x:  214   top_y:  197   width:   96   height:   91)
+Enter Image Path: data/test_image/img_391.png: Predicted in 28.872000 milli-seconds.
+Gate: 100%	(left_x:  124   top_y:  203   width:  107   height:  105)
+Enter Image Path: data/test_image/img_399.png: Predicted in 28.730000 milli-seconds.
+Gate: 100%	(left_x:   63   top_y:  210   width:  145   height:  125)
+Enter Image Path: data/test_image/img_410.png: Predicted in 28.760000 milli-seconds.
+Gate: 100%	(left_x:   83   top_y:  149   width:  155   height:  125)
+Enter Image Path: data/test_image/img_413.png: Predicted in 28.756000 milli-seconds.
+Gate: 100%	(left_x:  121   top_y:  146   width:  115   height:  116)
+Enter Image Path: data/test_image/img_420.png: Predicted in 28.785000 milli-seconds.
+Gate: 100%	(left_x:   86   top_y:  134   width:  158   height:  139)
+Enter Image Path: data/test_image/img_424.png: Predicted in 28.823000 milli-seconds.
+Gate: 100%	(left_x:   84   top_y:  125   width:  186   height:  149)
+Enter Image Path: data/test_image/img_427.png: Predicted in 28.878000 milli-seconds.
+Gate: 100%	(left_x:   93   top_y:  123   width:  181   height:  167)
+Enter Image Path: data/test_image/img_432.png: Predicted in 29.241000 milli-seconds.
+Gate: 100%	(left_x:   98   top_y:  140   width:  185   height:  168)
+Enter Image Path: data/test_image/img_437.png: Predicted in 29.056000 milli-seconds.
+Gate: 98%	(left_x:   72   top_y:  143   width:  232   height:  199)
+Enter Image Path: 
