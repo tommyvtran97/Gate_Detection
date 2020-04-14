@@ -27,7 +27,7 @@ This python script will generate the test.txt, train.txt and val.txt. Also in Fo
 
 #### 3 - Training the YOLOv3-Tiny Model
 To train the YOLOv3-Tiny model, navigate to /Darknet and run the following command:
-- ./darknet detector train data/obj.data cfg/yolo-tiny-obj.cfg yolov3-tiny.conv.15
+- ./darknet detector train data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15
 
 To train the YOLOv3 model, navigate to /Darknet and run the following command:
 - ./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74
