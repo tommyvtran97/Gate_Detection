@@ -36,7 +36,7 @@ This process, might take a while depending what kind of GPU is used.
 
 #### 4 - Testing the trained model on the test-images
 To run the trained YOLOv3-Tiny model on the test images, navigate to /Darknet and run the following command:
-- ./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-obj-tiny-final.weights -dont_show -ext_output < data/train.txt > result_yolo_tiny_2000.txt
+- ./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/train.txt > result_yolo_tiny_2000.txt
 
 To run the trained YOLOv3 model on the test images, navigate to /Darknet and run the following command:
 - ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/Yolo/yolo-obj_final.weights -dont_show -ext_output < data/train.txt > result_yolo_2000.txt
