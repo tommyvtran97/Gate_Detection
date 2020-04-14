@@ -3,45 +3,49 @@
 ## Main Setup LINUX
 
 
-#### 1 - Creating the required files for training
+#### Creating the required files for setup
 
-To train the YOLOv3 Tiny model first download the files in {insert link}. It contains the following folders.
-* Folder YOLOv3 - contains the files that are required to train the YOLOv3 model and the final weigs obtained from training
-* Folder_txt - contains txt files of the training images with the labels in the format <object-class> <x> <y> <width> <height> Note that the coordinate all all normalize relative to the size of the image.
-* Images_Test - Contains the test images
-* Images_Train - Contains the training images
-* Images_Validation - Contains the validation images
+To train the YOLOv3 Tiny model first download the files in {insert link}. It contains the following folders and files.
+* Folder YOLOv3
+* Folder_txt 
+* Images_Test
+* Images_Train 
+* Images_Validation 
+* corners.csv
+* create_txt.py
 
-In the corners.csv file the coordinates of the labelled images are stated. In order to generate the required files, first run the create_txt.py by navigation to the directory and running the following command:
+Step 1) Navigate in the terminal to the directory that contains the following items as listed above. 
+
+Step 2) Run the python script create_txt.py. This script will generate test.txt, train.txt, val.txt and txt files in the folder 'Folder_txt'. To run this script use the following command in terminal:
 * python create_txt.py
 
-This python script will generate the test.txt, train.txt and val.txt. Also in Folder_txt, txt files are created for all the training images. Note that Folder YOLOv3, contains the files in order train the YOLOv3 model. However, this is optional as the YOLOv3 Tiny model is chosen.
+#### Placing the created files in the correct directory
 
-#### 2 - Placing the created files in the correct directory
+Step3 ) Now that the required files are created, the files should be moved to the correct location. First of all create two folders named 'obj' and 'test_images' in /darknet/data. Then move the files to the correct location as described below:
 
-- The files in Folder_txt folder should be placed in Darknet/data/obj
-- The files in the Images_Train folder should be placed in /Darknet/data/obj
-- The files in the Images_Test folder should be placed in /Darknet/data/test_image
-- The test.txt, train.txt and val.txt files should be placed in /Darknet/data
-- In the YOLOv3 folder, 'darknet53.conv.74' should be placed in /Darknet, the remaining files that contains '.weights' as an extension should all be placed in Darknet/backup/Yolo
+- Files in 'Folder_txt' should be located in darknet/data/obj
+- Files in the 'Images_Train' folder should be located in /darknet/data/obj
+- Files in the 'Images_Test' should be located in /darknet/data/test_image
+- The 'test.txt', 'train.txt' and 'val.txt' files should be located in /darknet/data
+- In the YOLOv3 folder, 'darknet53.conv.74' should be placed in /darknet, the remaining files that contains '.weights' as an extension should all be placed in darknet/backup/Yolo. The folder 'Yolo' does not exist yet so create this folder. 
 
-#### 3 - Training the YOLOv3-Tiny Model
-To train the YOLOv3-Tiny model, navigate to /Darknet and run the following command:
-- ./darknet detector train data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15
+## Training the YOLOv3-Tiny Model
+Step 1) To train the YOLOv3-Tiny model, navigate to /Darknet and run the following command:
+* ./darknet detector train data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15
 
-To train the YOLOv3 model, navigate to /Darknet and run the following command:
-- ./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74
+Step 2) To train the YOLOv3 model, navigate to /darknet and run the following command:
+* ./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74
 
 This process, might take a while depending what kind of GPU is used.
 
-#### 4 - Testing the trained model on the test-images
-To run the trained YOLOv3-Tiny model on the test images, navigate to /Darknet and run the following command:
-- ./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_tiny_2000.txt
+## Testing the trained model on the test-images
+Step 1) To run the trained YOLOv3-Tiny model on the test images, navigate to /darknet and run the following command:
+* ./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_tiny_2000.txt
 
-To run the trained YOLOv3 model on the test images, navigate to /Darknet and run the following command:
-- ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/Yolo/yolo-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_2000.txt
+Step 2) To run the trained YOLOv3 model on the test images, navigate to /darknet and run the following command:
+* ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/Yolo/yolo-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_2000.txt
 
-This command will generate a txt file that contains the confidence level and coordinates of the predicted box. In a similar way the the txt files for 1000 iteration can be obtained by changing yolo-obj-tiny_1000.weights and result_yolo_tiny_1000.txt
+This command will generate a txt file that contains the confidence level and coordinates of the predicted box. In a similar way the the txt files for 1000 iteration can be obtained by changing yolo-obj-tiny_1000.weights and result_yolo_tiny_1000.txt.
 
 #### 5 - Showing the results
 The python file gate_data.py will generate the results obtained from trained model on the test images. This script contains four main functions CNN_CSV_File(), sort_corners(), plot_box() and IoU(). By default this script will shows the predicted results of the images. To run this script navigate to /Darknet and run the following command:
