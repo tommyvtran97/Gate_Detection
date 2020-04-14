@@ -72,7 +72,7 @@ Step 2) To run the trained YOLOv3 model on the test images, navigate to `/darkne
 
 This command will generate a txt file that contains the confidence level and coordinates of the predicted box. In a similar way the the txt files for 1000 iteration can be obtained by changing `yolo-obj-tiny_final.weights` to `yolo-obj-tiny_1000.weights`  and `result_yolo_tiny_2000.txt` to `result_yolo_tiny_1000.txt`.
 
-## 2 - Showing the results
+# 2 - Showing the results
 The python file gate_data.py will generate the results obtained from trained model on the test images. This script contains four main functions `CNN_CSV_File()`, `sort_corners()`, `plot_box()` and `IoU()`. By default this script will shows the predicted results of the images. To run this script navigate to /Darknet and run the following command:
 
 * `python gate_data.py`
