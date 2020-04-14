@@ -1,6 +1,6 @@
 # Gate Detection using Convolutional Neural Network in Autonomous Drone Racing
 
-## Only step 5 is neccesary to show the results! Step 1-4, is only neccessary for reproducing of the trained model and files necessary for showing the results in step 5. 
+## Main Setup LINUX
 
 
 #### 1 - Creating the required files for training
