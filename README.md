@@ -37,8 +37,10 @@ To avoid any potential conflicts while running the code, follow the steps indica
 
 Step 1) Create a virtual environment using the following command in terminal:
 * `python3 -m venv env`
+
 Step 2) Activate the virtual environment using the following commmand in terminal:
 * `source env/bin/activate`
+
 Step 3) Install the required package using the following command in terminal one by one:
 * `pip install opencv-python`
 * `pip install matplotlib`
@@ -54,14 +56,14 @@ Step 4) The default uses the CPU, if you computer has a NVIDIA GPU with CUDA, th
 Step 4) To initalize, navigate to `/darknet` and type the following command in the terminal:
 * make
 
-#### #4 Training the YOLOv3-Tiny Model
+#### #4 Training the YOLOv3-Tiny Model (OPTIONAL: already in repository)
 Step 1) To train the YOLOv3-Tiny model, navigate to /Darknet and run the following command:
 * `./darknet detector train data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15`
 
 Step 2) To train the YOLOv3 model, navigate to /darknet and run the following command:
 * `./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74`
 
-#### #5 Testing the trained model on the test-images
+#### #5 Testing the trained model on the test-images (OPTIONAL: already in repository)
 Step 1) To run the trained YOLOv3-Tiny model on the test images, navigate to /darknet and run the following command:
 * `./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_tiny_2000.txt`
 
@@ -71,9 +73,10 @@ Step 2) To run the trained YOLOv3 model on the test images, navigate to /darknet
 This command will generate a txt file that contains the confidence level and coordinates of the predicted box. In a similar way the the txt files for 1000 iteration can be obtained by changing `yolo-obj-tiny_final.weights` to `yolo-obj-tiny_1000.weights`  and `result_yolo_tiny_2000.txt` to `result_yolo_tiny_1000.txt`.
 
 ## 2 - Showing the results
-The python file gate_data.py will generate the results obtained from trained model on the test images. This script contains four main functions CNN_CSV_File(), sort_corners(), plot_box() and IoU(). By default this script will shows the predicted results of the images. To run this script navigate to /Darknet and run the following command:
+The python file gate_data.py will generate the results obtained from trained model on the test images. This script contains four main functions `CNN_CSV_File()`, `sort_corners()`, `plot_box()` and `IoU()`. By default this script will shows the predicted results of the images. To run this script navigate to /Darknet and run the following command:
 
 * `python gate_data.py`
+  * If you want to use the trained model for other test images, simply replace the images in `/darknet/data/test_images/` by the images that you want to test for.
 
 To generate the data for the ROC curve, the python script should be modified by commenting `plot_box()` at line 302 and uncommenting line 303. To generate the data for 1000 and 2000 iterations simply change line 10 to the number of iterations. Note that this could take a couple of minutes before the code is finished. Once it is finished the data files should be saved in `/darknet/ROC`. 
 
