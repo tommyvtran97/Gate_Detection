@@ -17,12 +17,12 @@ To train the YOLOv3 Tiny model first download the files in https://drive.google.
 
 Step 1) Navigate in the terminal to the directory that contains the following items as listed above. 
 
-Step 2) Run the python script create_txt.py. This script will generate test.txt, train.txt, val.txt and txt files in the folder 'Folder_txt'. To run this script use the following command in terminal:
+Step 2) Run the python script create_txt.py. This script will generate `test.txt`, `train.txt`, `val.txt` and txt files in the folder `Folder_txt`. To run this script use the following command in terminal:
 * `python create_txt.py`
 
 #### #2 Placing the created files in the correct directory
 
-Step 3) Now that the required files are created, the files should be moved to the correct location. First of all create two folders named 'obj' and 'test_images' in /darknet/data. Then move the files to the correct location as described below:
+Step 3) Now that the required files are created, the files should be moved to the correct location. First of all create two folders named '`obj`' and '`test_images`' in `/darknet/data`. Then move the files to the correct location as described below:
 
 - Files in `Folder_txt` should be located in `darknet/data/obj`
 - Files in the `Images_Train` folder should be located in `/darknet/data/obj`
@@ -57,17 +57,17 @@ Step 4) To initalize, navigate to `/darknet` and type the following command in t
 * make
 
 #### #4 Training the YOLOv3-Tiny Model (OPTIONAL: already in repository)
-Step 1) To train the YOLOv3-Tiny model, navigate to /Darknet and run the following command:
+Step 1) To train the YOLOv3-Tiny model, navigate to `/darknet` and run the following command:
 * `./darknet detector train data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15`
 
-Step 2) To train the YOLOv3 model, navigate to /darknet and run the following command:
+Step 2) To train the YOLOv3 model, navigate to `/darknet` and run the following command:
 * `./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74`
 
 #### #5 Testing the trained model on the test-images (OPTIONAL: already in repository)
-Step 1) To run the trained YOLOv3-Tiny model on the test images, navigate to /darknet and run the following command:
+Step 1) To run the trained YOLOv3-Tiny model on the test images, navigate to `/darknet` and run the following command:
 * `./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_tiny_2000.txt`
 
-Step 2) To run the trained YOLOv3 model on the test images, navigate to /darknet and run the following command:
+Step 2) To run the trained YOLOv3 model on the test images, navigate to `/darknet` and run the following command:
 * `./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/Yolo/yolo-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_2000.txt`
 
 This command will generate a txt file that contains the confidence level and coordinates of the predicted box. In a similar way the the txt files for 1000 iteration can be obtained by changing `yolo-obj-tiny_final.weights` to `yolo-obj-tiny_1000.weights`  and `result_yolo_tiny_2000.txt` to `result_yolo_tiny_1000.txt`.
