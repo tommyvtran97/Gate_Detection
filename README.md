@@ -27,7 +27,7 @@ This python script will generate the test.txt, train.txt and val.txt. Also in Fo
 
 #### 3 - Training the YOLOv3-Tiny Model
 To train the YOLOv3-Tiny model, navigate to /Darknet and run the following command:
-- ./darknet detector train data/obj.data cfg/yolo-tiny-obj.cfg yolov3-tiny.conv.15
+- ./darknet detector train data/obj.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15
 
 To train the YOLOv3 model, navigate to /Darknet and run the following command:
 - ./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74
@@ -36,10 +36,10 @@ This process, might take a while depending what kind of GPU is used.
 
 #### 4 - Testing the trained model on the test-images
 To run the trained YOLOv3-Tiny model on the test images, navigate to /Darknet and run the following command:
-- ./darknet detector test data/obj.data cfg/yolo-tiny-obj.cfg backup/Yolo-Tiny/yolo-obj-tiny-final.weights -dont_show -ext_output < data/train.txt > result_yolo_tiny_2000.txt
+- ./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_tiny_2000.txt
 
 To run the trained YOLOv3 model on the test images, navigate to /Darknet and run the following command:
-- ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/Yolo/yolo-obj_final.weights -dont_show -ext_output < data/train.txt > result_yolo_2000.txt
+- ./darknet detector test data/obj.data cfg/yolo-obj.cfg backup/Yolo/yolo-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_2000.txt
 
 This command will generate a txt file that contains the confidence level and coordinates of the predicted box. In a similar way the the txt files for 1000 iteration can be obtained by changing yolo-obj-tiny_1000.weights and result_yolo_tiny_1000.txt
 
