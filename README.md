@@ -76,7 +76,7 @@ The python file gate_data.py will generate the results obtained from trained mod
 
 To generate the data for the ROC curve, the python script should be modified by commenting `plot_box()` at line 302 and uncommenting line 303. To generate the data for 1000 and 2000 iterations simply change line 10 to the number of iterations. Note that this could take a couple of minutes before the code is finished. Once it is finished the data files should be saved in `/darknet/ROC`. 
 
-To generate the ROC plots, the `plot.py` script can be used. This script contains two main functions, `yolov3_plot()` and `yolov3_tiny_plot()`. By default this script will generate the ROC for YOLOv3 Tiny model for 1000 iterations and 2000 iterations. If the ROC curve for YOLOv3 is required simply comment yolov3_tiny_plot() on line 136 and uncomment yolov3_plot() on line 135. To run this script navigate to `/darknet` and run the following command:
+To generate the ROC plots, the `plot.py` script can be used. This script contains two main functions, `yolov3_plot()` and `yolov3_tiny_plot()`. By default this script will generate the ROC for YOLOv3 Tiny model for 1000 iterations and 2000 iterations. If the ROC curve for YOLOv3 is required simply comment `yolov3_tiny_plot()` on line 136 and uncomment `yolov3_plot()` on line 135. To run this script navigate to `/darknet` and run the following command:
 
 * `python plot.py`
 
