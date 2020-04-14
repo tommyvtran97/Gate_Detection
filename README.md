@@ -1,5 +1,5 @@
 #### Gate detection algorithm using Convolutional Neural Network (CNN) for autonomous drone racing applications
-* Note that the main setup for LINUX is only required for verification of the created files. The code can be run by itself without going through the main setup as all the files for showing the results are already in the repository.
+* Note that the main setup for LINUX is only required for verification of the created files. The code can be run by itself without going through the main setup as all the files for showing the results are already in the repository except for the test images.
 
 # 1 - Main Setup LINUX
 
