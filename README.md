@@ -17,7 +17,7 @@ To train the YOLOv3 Tiny model first download the files in {insert link}. It con
 Step 1) Navigate in the terminal to the directory that contains the following items as listed above. 
 
 Step 2) Run the python script create_txt.py. This script will generate test.txt, train.txt, val.txt and txt files in the folder 'Folder_txt'. To run this script use the following command in terminal:
-* python create_txt.py
+* `python create_txt.py`
 
 #### #2 Placing the created files in the correct directory
 
