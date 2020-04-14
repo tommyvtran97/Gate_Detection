@@ -60,7 +60,7 @@ Step 1) To train the YOLOv3-Tiny model, navigate to /Darknet and run the followi
 Step 2) To train the YOLOv3 model, navigate to /darknet and run the following command:
 * `./darknet detector train data/obj.data cfg/yolo-obj.cfg darknet53.conv.74`
 
-#### #3 Testing the trained model on the test-images
+#### #5 Testing the trained model on the test-images
 Step 1) To run the trained YOLOv3-Tiny model on the test images, navigate to /darknet and run the following command:
 * `./darknet detector test data/obj.data cfg/yolov3-tiny-obj.cfg backup/Yolo-Tiny/yolov3-tiny-obj_final.weights -dont_show -ext_output < data/test.txt > result_yolo_tiny_2000.txt`
 
