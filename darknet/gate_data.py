@@ -273,9 +273,6 @@ def IoU():
                 print('{} True Positives'.format(TP_counter))
                 print('{} False Postives'.format(FP_counter))
                 print ('{} Detection'.format(detection_counter))
-                if TP_counter != gate_counter:
-                	if TP_counter == detection_counter or TP_counter < gate_counter:
-                		print("{} False Negative".format(gate_counter - TP_counter))
                 print ('*******************************')
                 
                 #Update the total true/false positives
