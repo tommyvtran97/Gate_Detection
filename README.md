@@ -8,7 +8,7 @@
 
 #### #1 Create virtual environment and installing packages
 
-To avoid any potential conflicts while running the code, follow the steps indicated below. If you already have these packages installed on the computer indicated in `step 3`, you should be able to run everything without creating a virtual environment. Then skip `step 1-3` is go to proceed from `step 4`.
+To avoid any potential conflicts while running the code, follow the steps indicated below. If you already have these packages installed on the computer indicated in `step 3`, you should be able to run everything without creating a virtual environment. Then skip `step 1-3` and move on to `item 2`
 
 Step 1) Create a virtual environment using the following command in terminal:
 * `python3 -m venv env`
