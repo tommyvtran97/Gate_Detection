@@ -82,7 +82,7 @@ Step 1) The python file `gate_data.py` will generate the results obtained from t
 * `python gate_data.py`
   * If you want to use the trained model for other test images, simply replace the images in `/darknet/data/test_images/` by the images that you want to test for and repeat `#5 Testing the trained model on the test images` and afterwards run python `gate_data.py`.
 
-Step 2) To generate the data for the ROC curve, the python script should be modified by commenting `plot_box()` at line 302 and uncommenting `IoU()` on line 303. To generate the data for 1000 and 2000 iterations simply change line 10 to the number of iterations. Note that this could take a couple of minutes before the code is finished. Once it is finished the data files should be saved in `/darknet/ROC`. (OPTIONAL)
+Step 2) To generate the data for the ROC curve, the python script should be modified by commenting `plot_box()` at line 302 and uncommenting `IoU()` on line 303. To generate the data for 1000 and 2000 iterations simply change line 10 to the number of iterations. Note that this could take a couple of minutes before the code is finished. Once it is finished the data files should be saved in `/darknet/ROC`. (**OPTIONAL**)
 
 Step 3) To generate the ROC plots, the `plot.py` script can be used. This script contains two main functions, `yolov3_plot()` and `yolov3_tiny_plot()`. By default this script will generate the ROC for YOLOv3 Tiny model for 1000 iterations and 2000 iterations. If the ROC curve for YOLOv3 is required simply comment `yolov3_tiny_plot()` on line 136 and uncomment `yolov3_plot()` on line 135. To run this script navigate to `/darknet` and run the following command:
 
