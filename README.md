@@ -24,7 +24,7 @@ Step 3) Install the required package using the following command in terminal one
 
 #### #2 Creating the required files for setup
 
-To train the YOLOv3 Tiny model first download the files in https://drive.google.com/open?id=1UvtluYI75IDGwz1y5WXZRuQTpLbvYDKO. It contains the following folders and files.
+To train the YOLOv3 Tiny model first download the files in https://drive.google.com/open?id=1UvtluYI75IDGwz1y5WXZRuQTpLbvYDKO. It contains the following folders and files [Link does not exist anymore].
 * `Folder YOLOv3`
 * `Folder_txt` 
 * `Images_Test`
